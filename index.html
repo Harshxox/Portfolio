@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harshdeep Sharma — AI/ML Engineer & Builder</title>
+  <meta name="description"
+    content="Harshdeep Sharma | AI/ML Engineer, B.Tech CS student, Intern at L&T & Infosys, Young Leader VBYLD 2026 Winner. Interactive 3D Portfolio." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- LOADING SCREEN -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">HS</div>
+      <div class="loader-bar">
+        <div class="loader-fill"></div>
+      </div>
+      <div class="loader-text">Initializing 3D World...</div>
+    </div>
+  </div>
+
+  <!-- THREE.JS CANVAS -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- CURSOR -->
+  <div id="cursor"></div>
+  <div id="cursor-follower"></div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-logo">HS<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#hero" data-nav="hero">Home</a></li>
+      <li><a href="#about" data-nav="about">About</a></li>
+      <li><a href="#projects" data-nav="projects">Projects</a></li>
+      <li><a href="#experience" data-nav="experience">Experience</a></li>
+      <li><a href="#skills" data-nav="skills">Skills</a></li>
+      <li><a href="#blog" data-nav="blog">Blog</a></li>
+      <li><a href="#contact" data-nav="contact">Contact</a></li>
+    </ul>
+    <div class="nav-toggle" id="navToggle">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main id="main-content">
+
+    <!-- HERO -->
+    <section id="hero" class="section">
+      <div class="hero-container">
+        <div class="hero-text">
+          <div class="hero-badge">🤖 AI/ML Engineer & Builder</div>
+          <h1 class="hero-name">Harshdeep<br /><span class="gradient-text">Sharma</span></h1>
+          <p class="hero-tagline">I don't just follow the AI wave — <strong>I help build it.</strong></p>
+          <p class="hero-sub">B.Tech CS (AI/ML) · L&amp;T Intern · Infosys Alumni · VBYLD 2026 Winner</p>
+          <div class="hero-cta">
+            <a href="#experience" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-outline">Get In Touch</a>
+          </div>
+          <div class="hero-socials">
+            <a href="https://www.linkedin.com/in/harshdeep-ai" target="_blank" class="social-link">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+              LinkedIn
+            </a>
+            <a href="https://github.com/Harshxox" target="_blank" class="social-link">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+              </svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+        <div class="hero-photo-wrap">
+          <div class="hero-photo-ring"></div>
+          <div class="hero-photo-ring ring2"></div>
+          <img src="assets/images/photo1.jpg" alt="Harshdeep Sharma" class="hero-photo" id="heroPhoto" />
+          <div class="hero-photo-glow"></div>
+          <div class="floating-badge badge1">🏆 VBYLD 2026</div>
+          <div class="floating-badge badge2">🤖 AI/ML</div>
+          <div class="floating-badge badge3">🚀 Builder</div>
+        </div>
+      </div>
+      <div class="scroll-hint">
+        <span>Scroll to explore</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section reveal-section">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">🙋 Who I Am</span>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-images">
+            <div class="about-img-main">
+              <img src="assets/images/photo2.jpg" alt="Harshdeep thinking" />
+            </div>
+            <div class="about-img-secondary">
+              <img src="assets/images/photo3.jpg" alt="Viksit Bharat Exhibition" />
+              <div class="about-img-label">Viksit Bharat Exhibition</div>
+            </div>
+          </div>
+          <div class="about-content">
+            <p class="about-lead">I build AI systems — not just study them.</p>
+            <p class="about-body">I'm a B.Tech CSE (AI/ML) student who doesn't wait for graduation to start building.
+              From AI-powered battery intelligence systems to music generation models, I focus on shipping real-world,
+              scalable solutions — not just academic prototypes.</p>
+            <p class="about-body">With internships at <strong>L&amp;T Technology Services</strong> (AI/ML) and
+              <strong>Infosys Springboard</strong> (AI Music System), I've worked across the full stack — from ML model
+              training to backend APIs to production-ready UIs. Add national hackathons, IEEE panels, and leadership at
+              the PM level, and you have someone who builds, speaks, and leads with equal confidence.
+            </p>
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <span class="highlight-icon">💼</span>
+                <div>
+                  <strong>AI Internship @ L&amp;T, Chennai</strong>
+                  <span>Working on practical AI applications</span>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">🎵</span>
+                <div>
+                  <strong>AI Music Generation System</strong>
+                  <span>Built at Infosys Springboard</span>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">🛸</span>
+                <div>
+                  <strong>NASA Space Apps</strong>
+                  <span>Competed in global innovation challenges</span>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">🏛️</span>
+                <div>
+                  <strong>National Leadership</strong>
+                  <span>Engaged with PM of India at national platforms</span>
+                </div>
+              </div>
+            </div>
+            <div class="about-stats">
+              <div class="stat"><span class="stat-num">4+</span><span class="stat-label">Years Experience</span></div>
+              <div class="stat"><span class="stat-num">10+</span><span class="stat-label">Certifications</span></div>
+              <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Hackathons</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY + JOURNEY STORIES -->
+    <section id="gallery" class="section reveal-section">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">📸 Moments &amp; Milestones</span>
+          <h2 class="section-title">My <span class="gradient-text">Journey</span></h2>
+        </div>
+
+        <!-- Photo Gallery -->
+        <div class="gallery-grid">
+          <div class="gallery-card" data-tilt>
+            <img src="assets/images/photo4.jpg" alt="VBYLD 2026" />
+            <div class="gallery-overlay">
+              <span>🏆 Viksit Bharat Young Leaders Dialogue 2026</span>
+            </div>
+          </div>
+          <div class="gallery-card" data-tilt>
+            <img src="assets/images/photo5.png" alt="Bharat Mandapam" />
+            <div class="gallery-overlay">
+              <span>🏛️ Bharat Mandapam, New Delhi</span>
+            </div>
+          </div>
+          <div class="gallery-card" data-tilt>
+            <img src="assets/images/photo3.jpg" alt="Viksit Bharat Exhibition" />
+            <div class="gallery-overlay">
+              <span>🇮🇳 Viksit Bharat Exhibition</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ★ VBYLD 2026 — FLAGSHIP JOURNEY CARD ★ -->
+        <div class="vbyld-card reveal-item">
+
+          <!-- 3-Photo Strip -->
+          <div class="vbyld-photos">
+            <div class="vbyld-photo vbyld-photo-main">
+              <img src="assets/images/photo4.jpg" alt="VBYLD 2026 - Harshdeep at Bharat Mandapam" />
+              <div class="vbyld-photo-label">Bharat Mandapam · New Delhi</div>
+            </div>
+            <div class="vbyld-photo-pair">
+              <div class="vbyld-photo">
+                <img src="assets/images/photo5.png" alt="Viksit Bharat Exhibition" />
+                <div class="vbyld-photo-label">Viksit Bharat Exhibition</div>
+              </div>
+              <div class="vbyld-photo">
+                <img src="assets/images/photo3.jpg" alt="Selected Delegate at VBYLD 2026" />
+                <div class="vbyld-photo-label">Selected Young Leader · 2026</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Content -->
+          <div class="vbyld-content">
+            <div class="vbyld-header">
+              <div class="vbyld-badge-row">
+                <span class="vbyld-flag">🇮🇳</span>
+                <span class="vbyld-supertag">National Leadership Program · 2026</span>
+              </div>
+              <h3 class="vbyld-title">Viksit Bharat Young Leaders Dialogue</h3>
+              <p class="vbyld-tagline">Selected among ~3,000 young leaders from across India. New Delhi wasn't just a destination — it was a turning point.</p>
+            </div>
+
+            <p class="vbyld-body">
+              Some moments don't just add a line to your resume — they shift the way you think about your own potential. Being selected for the <strong>Viksit Bharat Young Leaders Dialogue 2026</strong> at Bharat Mandapam, New Delhi, was one of those moments. Out of thousands of applicants across India, I was chosen as a young delegate to represent ideas, voice perspectives, and contribute to the national conversation on India's development.
+            </p>
+            <p class="vbyld-body">
+              At the event, I pitched a concept focused on <strong>strengthening India's semiconductor and silicon industry</strong> — reducing our dependency on external imports and building indigenous chip manufacturing capacity as a cornerstone of a self-reliant, developed India by 2047. Presenting this to a room of policymakers, change-makers, and fellow young leaders made it real in a way no classroom ever could.
+            </p>
+            <p class="vbyld-body">
+              The experience pushed me beyond the boundaries of technology. It taught me that <strong>building AI systems matters — but understanding the national infrastructure those systems run on matters just as much.</strong> Leadership, policy thinking, and vision for scale became part of how I see my work.
+            </p>
+
+            <p class="vbyld-impact">
+              "I didn't just attend an event. I stood in the place where India's future was being discussed — and added my voice to it."
+            </p>
+
+            <div class="vbyld-tags">
+              <span>🏅 National Leadership</span>
+              <span>🧠 Policy &amp; Innovation</span>
+              <span>💡 Semiconductor Vision</span>
+              <span>🎤 Public Pitching</span>
+              <span>🌏 Vision 2047</span>
+              <span>🏛️ Bharat Mandapam</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Journey Story Cards -->
+        <div class="journey-grid">
+
+
+          <div class="journey-card reveal-item">
+            <div class="journey-card-top">
+              <span class="journey-icon">🛸</span>
+              <div class="journey-meta">
+                <span class="journey-tag">International Hackathon</span>
+                <span class="journey-date">NASA Space Apps Challenge</span>
+              </div>
+            </div>
+            <div class="journey-img-wrap">
+              <img src="assets/images/journey-nasa.jpg" alt="NASA Space Apps Challenge - Team coding"
+                class="journey-img" />
+            </div>
+            <h3 class="journey-title">Where It All Began — Global Stage, Real Stakes</h3>
+            <p class="journey-body">
+              Competing in the <strong>NASA Space Apps Challenge</strong> was my first taste of what high-pressure,
+              global-scale problem solving really feels like. Working with a team against the clock, we tackled
+              real-world space and sustainability challenges — the kind that don't have a textbook answer.
+            </p>
+            <p class="journey-body">
+              More than the code, it was the mindset shift that stayed with me: that a student with the right team and
+              the right drive can compete on an international platform. That experience lit the spark.
+            </p>
+            <div class="journey-tags">
+              <span>Teamwork</span><span>Problem Solving</span><span>Global Innovation</span>
+            </div>
+          </div>
+
+          <div class="journey-card reveal-item">
+            <div class="journey-card-top">
+              <span class="journey-icon">🎤</span>
+              <div class="journey-meta">
+                <span class="journey-tag">Student Panelist · Public Speaking</span>
+                <span class="journey-date">IEEE Tech Summit 2025</span>
+              </div>
+            </div>
+            <div class="journey-img-wrap">
+              <img src="assets/images/journey-ieee.jpg" alt="IEEE Tech Summit 2025 - Speaking with mic"
+                class="journey-img" />
+            </div>
+            <h3 class="journey-title">From the Audience to the Panel</h3>
+            <p class="journey-body">
+              Being selected as a <strong>student panelist at IEEE Tech Summit 2025</strong> was a turning point.
+              Standing in front of hundreds of industry professionals, I shared my perspective on emerging technologies
+              — including the future of 6G — and held my ground alongside seasoned experts.
+            </p>
+            <p class="journey-body">
+              It taught me that having a point of view and the courage to voice it matters as much as technical depth.
+              That day, I didn't just attend a summit — I contributed to it.
+            </p>
+            <div class="journey-tags">
+              <span>IEEE</span><span>Public Speaking</span><span>6G &amp; Future Tech</span><span>Industry
+                Networking</span>
+            </div>
+          </div>
+
+          <div class="journey-card reveal-item">
+            <div class="journey-card-top">
+              <span class="journey-icon">⚡</span>
+              <div class="journey-meta">
+                <span class="journey-tag">25-Hour Hackathon</span>
+                <span class="journey-date">TechBiz · Presidency University</span>
+              </div>
+            </div>
+            <div class="journey-img-wrap">
+              <img src="assets/images/journey-techbiz.jpg" alt="TechBiz Hackathon - Team at Presidency University"
+                class="journey-img" />
+            </div>
+            <h3 class="journey-title">25 Hours. One Shot. Build or Break.</h3>
+            <p class="journey-body">
+              The <strong>TechBiz 25-Hour Hackathon</strong> at Presidency University was exactly what it sounds like —
+              brutal, fast, and incredibly energizing. No shortcuts, no safety nets. Just a team, a problem, and a hard
+              deadline.
+            </p>
+            <p class="journey-body">
+              I learned what real execution looks like under extreme pressure: making quick decisions, debugging at 3
+              AM, and shipping something that actually works — not something that almost works. The intensity sharpened
+              me in ways no classroom could.
+            </p>
+            <div class="journey-tags">
+              <span>Rapid Prototyping</span><span>Team Execution</span><span>Deadline Pressure</span>
+            </div>
+          </div>
+
+          <div class="journey-card reveal-item journey-card-highlight">
+            <div class="journey-card-top">
+              <span class="journey-icon">🔋</span>
+              <div class="journey-meta">
+                <span class="journey-tag">National Hackathon · Top 7</span>
+                <span class="journey-date">EV Battery Intelligence Challenge</span>
+              </div>
+            </div>
+            <div class="journey-img-wrap">
+              <img src="assets/images/journey-ev.jpg" alt="EV Battery Intelligence Challenge - Presenting to C-DAC"
+                class="journey-img" />
+            </div>
+            <h3 class="journey-title">AI Meets Hardware — Presenting to C-DAC &amp; Industry Experts</h3>
+            <p class="journey-body">
+              This one was different. At the <strong>EV Battery Intelligence Challenge</strong>, we built an AI-powered
+              system designed to predict battery risk and failures in real time using live sensor data — combining both
+              hardware and software into a working prototype.
+            </p>
+            <p class="journey-body">
+              We presented in front of <strong>C-DAC leadership and senior industry experts</strong>, defending every
+              technical decision we made. The result? We secured a <strong>Top 7 position nationally</strong>. More than
+              the rank, it validated that I can build, present, and stand behind real AI systems that solve critical
+              problems.
+            </p>
+            <div class="journey-tags">
+              <span>AI/ML</span><span>EV Tech</span><span>C-DAC</span><span>Hardware + Software</span><span>Top 7
+                National</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Journey Closing Line -->
+        <div class="journey-closing reveal-item">
+          <p>Every challenge has been a chapter. Every stage, a classroom. I'm still writing — and the best is yet to
+            come. <span class="gradient-text">Building impactful technology, one step at a time.</span></p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section reveal-section">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">💼 Work History</span>
+          <h2 class="section-title">Experience<span class="gradient-text">.</span></h2>
+        </div>
+        <div class="timeline">
+
+          <div class="timeline-item reveal-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3>AI/ML Developer Intern</h3>
+                  <span class="company">🏗️ L&amp;T Technology Services</span>
+                </div>
+                <div class="timeline-meta">
+                  <span class="date">Apr 2026 – Present</span>
+                  <span class="location">📍 Chennai, India</span>
+                  <span class="badge-current">Current</span>
+                </div>
+              </div>
+              <p>Building intelligent, scalable solutions at the intersection of ML, Computer Vision, and Generative AI.
+              </p>
+              <ul class="timeline-bullets">
+                <li>Real-time problem-solving with ML models</li>
+                <li>Exploring Computer Vision &amp; Data Analysis pipelines</li>
+                <li>Automating workflows using cutting-edge AI tools</li>
+              </ul>
+              <div class="tech-stack">
+                <span>Python</span><span>Machine Learning</span><span>Generative AI</span><span>Deep
+                  Learning</span><span>Cybersecurity</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3>ML &amp; Full Stack Engineer Intern</h3>
+                  <span class="company">🔷 Infosys Springboard</span>
+                </div>
+                <div class="timeline-meta">
+                  <span class="date">Sep – Nov 2025</span>
+                  <span class="location">📍 Bengaluru, India</span>
+                </div>
+              </div>
+              <p>Developed an AI-Based Music Composition System using Flask, Firebase Authentication, YAMNet, and
+                MusicGen.</p>
+              <ul class="timeline-bullets">
+                <li>End-to-end ML pipeline: data preprocessing, model training, evaluation</li>
+                <li>Genre classification &amp; real-time music generation</li>
+                <li>Full-stack application integrating ML with user-friendly UI</li>
+              </ul>
+              <div class="tech-stack">
+                <span>Flask</span><span>Firebase</span><span>YAMNet</span><span>MusicGen</span><span>Python</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3>Agency Manager</h3>
+                  <span class="company">🌱 Vennture</span>
+                </div>
+                <div class="timeline-meta">
+                  <span class="date">Aug 2024 – Apr 2025</span>
+                  <span class="location">📍 Bengaluru, India</span>
+                </div>
+              </div>
+              <p>Managed agency operations, client relationships, and creative direction across projects.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3>Freelance Designer</h3>
+                  <span class="company">🎨 Self-Employed</span>
+                </div>
+                <div class="timeline-meta">
+                  <span class="date">Mar 2021 – Apr 2025</span>
+                  <span class="location">📍 Remote</span>
+                </div>
+              </div>
+              <p>4+ years of freelance video editing and graphic design work for various clients.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section reveal-section">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">⚡ Expertise</span>
+          <h2 class="section-title">Skills<span class="gradient-text">.</span></h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-category reveal-item">
+            <div class="skill-cat-icon">🧠</div>
+            <h3>AI / Machine Learning</h3>
+            <div class="skill-tags">
+              <span>Machine Learning</span><span>Deep Learning</span><span>Generative AI</span>
+              <span>Computer Vision</span><span>NLP</span><span>MusicGen</span><span>YAMNet</span>
+            </div>
+          </div>
+          <div class="skill-category reveal-item">
+            <div class="skill-cat-icon">💻</div>
+            <h3>Programming</h3>
+            <div class="skill-tags">
+              <span>Python</span><span>Java</span><span>JavaScript</span><span>HTML/CSS</span><span>SQL</span>
+            </div>
+          </div>
+          <div class="skill-category reveal-item">
+            <div class="skill-cat-icon">🌐</div>
+            <h3>Full-Stack Dev</h3>
+            <div class="skill-tags">
+              <span>Flask</span><span>Firebase</span><span>REST APIs</span><span>React</span><span>Node.js</span>
+            </div>
+          </div>
+          <div class="skill-category reveal-item">
+            <div class="skill-cat-icon">🛠️</div>
+            <h3>Tools & Platforms</h3>
+            <div class="skill-tags">
+              <span>AWS</span><span>Google AI Studio</span><span>Git</span><span>Docker</span>
+            </div>
+          </div>
+          <div class="skill-category reveal-item">
+            <div class="skill-cat-icon">🏆</div>
+            <h3>Leadership</h3>
+            <div class="skill-tags">
+              <span>Team Leadership</span><span>Public Speaking</span><span>Politics</span>
+              <span>Startup Exposure</span><span>Hackathons</span>
+            </div>
+          </div>
+          <div class="skill-category reveal-item">
+            <div class="skill-cat-icon">🎨</div>
+            <h3>Creative</h3>
+            <div class="skill-tags">
+              <span>Video Editing</span><span>Graphic Design</span><span>UI/UX</span><span>Branding</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill bars -->
+        <div class="skill-bars reveal-item">
+          <div class="skill-bar-item">
+            <div class="skill-bar-label"><span>Python / AI & ML</span><span>92%</span></div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-w="92"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-label"><span>Generative AI</span><span>88%</span></div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-w="88"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-label"><span>Full-Stack Development</span><span>80%</span></div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-w="80"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-label"><span>Computer Vision</span><span>75%</span></div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-w="75"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-label"><span>Leadership & Comm.</span><span>95%</span></div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-w="95"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS -->
+    <section id="projects" class="section reveal-section">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">🔬 What I've Built</span>
+          <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        </div>
+        <div class="projects-grid">
+
+          <!-- Project 1: FIRE EV -->
+          <div class="project-card reveal-item">
+            <div class="project-header">
+              <div class="project-icon-wrap">🔋</div>
+              <div>
+                <div class="project-badge">National Hackathon · Top 7</div>
+                <h3 class="project-title">FIRE EV — AI Battery Intelligence System</h3>
+              </div>
+            </div>
+            <p class="project-desc">EV batteries fail silently — until they don't. FIRE EV is an AI-powered Battery
+              Management System that monitors real-time sensor data (voltage, current, temperature, vibration) to detect
+              risk and predict failures <em>before</em> they happen.</p>
+            <div class="project-section-label">⚙️ How It Works</div>
+            <ul class="project-bullets">
+              <li>Ingests live sensor streams from the battery hardware layer</li>
+              <li>ML model classifies current battery state and flags anomalies</li>
+              <li>Predictive analytics engine forecasts failure probability over time</li>
+              <li>Dashboard surfaces real-time risk scores and actionable alerts</li>
+            </ul>
+            <div class="project-section-label">🎯 Impact</div>
+            <p class="project-desc">Improves EV safety, reduces unexpected failures, and bridges the gap between
+              hardware telemetry and intelligent software — demonstrated in front of <strong>C-DAC leadership</strong>
+              at national level.</p>
+            <div class="project-tech">
+              <span>Python</span><span>Machine Learning</span><span>Predictive Analytics</span><span>Real-Time
+                Monitoring</span><span>Hardware Integration</span><span>IoT Sensors</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Harshxox" target="_blank" class="project-link-btn">🐙 GitHub</a>
+            </div>
+          </div>
+
+          <!-- Project 2: AI Music System -->
+          <div class="project-card reveal-item">
+            <div class="project-header">
+              <div class="project-icon-wrap">🎵</div>
+              <div>
+                <div class="project-badge">Infosys Springboard Internship</div>
+                <h3 class="project-title">AI Music Generation System</h3>
+              </div>
+            </div>
+            <p class="project-desc">Music is a language. This system learns it. Built during my Infosys internship, this
+              end-to-end AI pipeline takes a text prompt or mood as input and generates original music — no musician
+              needed.</p>
+            <div class="project-section-label">⚙️ How It Works</div>
+            <ul class="project-bullets">
+              <li>YAMNet classifies audio genre and emotional context from input</li>
+              <li>MusicGen model produces a unique composition based on the prompt</li>
+              <li>Flask backend handles inference, Firebase manages auth &amp; storage</li>
+              <li>Clean web UI lets users generate, preview, and download their track</li>
+            </ul>
+            <div class="project-section-label">🎯 Impact</div>
+            <p class="project-desc">Demonstrates that AI creativity is real — not a gimmick. A full ML pipeline from
+              model training to a working, deployed product that non-technical users can interact with instantly.</p>
+            <div class="project-tech">
+              <span>Python</span><span>Flask</span><span>Firebase</span><span>YAMNet</span><span>MusicGen</span><span>Deep
+                Learning</span><span>Full-Stack</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Harshxox" target="_blank" class="project-link-btn">🐙 GitHub</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TECH BLOG -->
+    <section id="blog" class="section reveal-section">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">📝 Thinking Out Loud</span>
+          <h2 class="section-title">Tech <span class="gradient-text">Insights</span></h2>
+        </div>
+        <div class="blog-grid">
+
+          <div class="blog-card reveal-item">
+            <div class="blog-num">01</div>
+            <div class="blog-cat">AI / EV Technology</div>
+            <h3 class="blog-title">How AI Can Predict EV Battery Failures</h3>
+            <p class="blog-body">Modern EV batteries generate thousands of data points per second — voltage spikes,
+              temperature gradients, micro-vibrations. Most systems discard this data. AI doesn't. By training ML models
+              on historical sensor streams, we can identify failure signatures weeks before a breakdown occurs. This
+              isn't theoretical: real-time predictive analytics is already reducing downtime and improving safety in
+              production EV systems. The goal isn't just detection — it's prevention, and that changes everything about
+              how we think about battery reliability.</p>
+            <div class="blog-tags"><span>Predictive Analytics</span><span>EV Tech</span><span>IoT + ML</span></div>
+          </div>
+
+          <div class="blog-card reveal-item">
+            <div class="blog-num">02</div>
+            <div class="blog-cat">Hackathons / Growth</div>
+            <h3 class="blog-title">Lessons from 24-Hour Hackathons</h3>
+            <p class="blog-body">No deadline teaches you more than one you can't move. In a 24-hour hackathon, you learn
+              the difference between knowing a concept and being able to deploy it under pressure. You scope ruthlessly,
+              make technical bets fast, and debug at 3 AM with teammates who become your best collaborators. The real
+              lesson isn't the code you write — it's the decision-making instinct you build. Classrooms teach you what
+              to build. Hackathons teach you how to build when everything is on the line and the clock is ticking.</p>
+            <div class="blog-tags"><span>Rapid Execution</span><span>Teamwork</span><span>Decision Making</span></div>
+          </div>
+
+          <div class="blog-card reveal-item">
+            <div class="blog-num">03</div>
+            <div class="blog-cat">AI Engineering / Scale</div>
+            <h3 class="blog-title">Why Scalable Systems Matter More Than Just AI Models</h3>
+            <p class="blog-body">A model that scores 96% accuracy in a notebook means nothing if it crashes under real
+              traffic. The gap between an AI demo and an AI product is infrastructure — data pipelines, latency budgets,
+              fallback logic, monitoring. Most engineers learn ML. Fewer learn to build systems around it. Scalability
+              isn't an afterthought; it's the design constraint that separates a prototype from a product. If your
+              system can't handle 10,000 users, it can't create real impact — and real impact is the only thing that
+              matters.</p>
+            <div class="blog-tags"><span>MLOps</span><span>System Design</span><span>Production AI</span></div>
+          </div>
+
+        </div>
+
+        <!-- FEATURED BLOG: Radar Chart Post (full-width) -->
+        <div class="blog-card blog-featured reveal-item">
+          <div class="blog-featured-inner">
+
+            <!-- Chart image: TOP placement -->
+            <div class="blog-chart-wrap">
+              <img src="assets/images/radar-chart.png" alt="Theoretical AI vs Current AI Capabilities Radar Chart"
+                class="blog-chart-img" />
+              <div class="blog-chart-caption">Theoretical AI Capability vs. Real-World Deployment — across 9 tech
+                domains</div>
+            </div>
+
+            <!-- Blog content -->
+            <div class="blog-featured-content">
+              <div class="blog-featured-meta">
+                <span class="blog-num">04</span>
+                <div>
+                  <div class="blog-cat">AI Strategy / Industry Analysis</div>
+                  <h3 class="blog-title blog-featured-title">Where Is AI Actually Winning? A Domain-by-Domain Breakdown
+                  </h3>
+                </div>
+              </div>
+
+              <p class="blog-body">Everyone says AI is changing everything. But look closer, and you'll notice something
+                uncomfortable: <strong>it's changing some things dramatically and barely touching others.</strong> The
+                gap between what AI can theoretically do and what's actually deployed in production isn't uniform — it's
+                wildly uneven across domains.</p>
+
+              <p class="blog-body">The chart above maps <em>Theoretical AI Capability</em> against <em>Current
+                  Real-World Deployment</em> across nine domains. In <strong>AI/ML, Data Science, and
+                  Content/GenAI</strong>, the gap is nearly closed. These domains have one thing in common: low stakes
+                for being wrong. A hallucinated sentence is annoying. A hallucinated firewall rule is catastrophic.</p>
+
+              <p class="blog-body">That's exactly why <strong>Backend infrastructure, Cybersecurity, and Systems
+                  engineering</strong> still show the largest deployment gaps. The moment AI touches critical pipelines,
+                trust becomes the bottleneck — not capability. Reliability, auditability, and infrastructure complexity
+                are walls that benchmark scores alone don't break through.</p>
+
+              <p class="blog-body"><strong>AI isn't replacing domains equally — it's replacing tasks within domains
+                  selectively.</strong> It's eating the predictable, repeatable, high-volume tasks first. The creative,
+                the judgment-heavy, the high-stakes? Those are proving far more resilient than the headlines suggest.
+              </p>
+
+              <p class="blog-body">As someone building AI systems — not just studying them — I've felt this firsthand.
+                Training a model is the easy part. Deploying it into a system where it has to be fast, correct,
+                explainable, and recoverable under failure? That's a completely different discipline. Deployment isn't
+                the finish line. It's where the real engineering begins.</p>
+
+              <p class="blog-quote">"The future won't be built by people who only understand AI — but by those who
+                understand <em>where AI still fails.</em>"</p>
+
+              <div class="blog-tags">
+                <span>AI Strategy</span><span>Domain Analysis</span><span>MLOps</span><span>Production
+                  AI</span><span>System Reliability</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- BLOG #05: Storytelling Card (L&T office moment) -->
+    <section class="section reveal-section" style="padding-top:0;min-height:auto">
+      <div class="section-container" style="padding-top:0">
+        <div class="blog-card blog-story reveal-item">
+
+          <!-- Title block -->
+          <div class="blog-story-header">
+            <span class="blog-num">05</span>
+            <div>
+              <div class="blog-cat">Career / AI Displacement / Personal</div>
+              <h3 class="blog-story-title">'Half of These Roles May Not Exist in 5 Years.'</h3>
+              <p class="blog-story-sub">A Monday morning at L&amp;T. A quiet room. And a question no one wanted to
+                answer out loud.</p>
+            </div>
+          </div>
+
+          <!-- Story body -->
+          <div class="blog-story-body">
+            <p class="blog-body">Our HR said it without warning. No slide, no build-up — just a sentence dropped into a
+              Monday morning briefing like it belonged there.</p>
+
+            <p class="blog-quote-pull">"Half of these roles may not exist in 5 years."</p>
+
+            <p class="blog-body">The room didn't react dramatically. That was the unsettling part. Engineers, analysts,
+              developers — everyone just did the same quiet calculation behind their eyes. <em>Am I on the list?</em>
+            </p>
+
+            <p class="blog-body">I had my coffee in my hand. Put it down. Picked it up again. Finished it in one sip.
+              Then opened my laptop — because that's the only response that made sense to me.</p>
+
+            <p class="blog-body">I spent the next hour going through industry reports, adoption studies, and real
+              deployment data. Not the headline version. The actual numbers. And then I built a spider chart comparing
+              where AI theory stands versus where it's actually deployed across tech domains.</p>
+
+            <p class="blog-body">Here's what the data said, without the noise: <strong>AI is closing the gap fast in
+                AI/ML, Data Science, and Content Generation.</strong> The tools exist. The products ship. The adoption
+              is real. But Backend Engineering, Cybersecurity, and complex systems infrastructure? The gap is still wide
+              — and it isn't closing at the same pace. Not because AI isn't capable of more. Because <strong>replacing
+                critical systems requires something capability alone can't buy: trust, regulation, and time.</strong>
+            </p>
+
+            <p class="blog-body">The real threat isn't AI taking your job tomorrow morning. It's staying exactly where
+              you are while the market quietly moves in a different direction. That gap — between your current position
+              and where the industry is going — that's the one worth worrying about.</p>
+
+            <p class="blog-body">I'm 19. Still finishing my degree. Interning at L&amp;T on real AI systems, not
+              classroom assignments. And I can already see this shift — not in think-pieces or conference keynotes, but
+              in actual offices, in actual decisions, in the way people pause before answering certain questions.</p>
+
+            <p class="blog-body">If I can see it from here, imagine what the people making hiring decisions already
+              know.</p>
+
+            <p class="blog-body">The choice ahead isn't complicated, but it is binary: <strong>either you move into AI,
+                or you build AI into your field.</strong> The middle ground — waiting and watching — is shrinking faster
+              than most people are comfortable admitting.</p>
+
+            <p class="blog-quote">"The question was never whether AI would change your industry. It's whether you'll be
+              the one shaping that change — or the one it happens to."</p>
+
+            <p class="blog-story-note">↳ The spider chart referenced is based on personal research and industry trend
+              analysis — not official data.</p>
+
+            <div class="blog-tags">
+              <span>Career Strategy</span><span>AI Displacement</span><span>Industry Shift</span><span>L&amp;T
+                Internship</span><span>Personal Perspective</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG #06: Mainframe Enterprise Systems -->
+    <section class="section reveal-section" style="padding-top:0;min-height:auto">
+      <div class="section-container" style="padding-top:0">
+        <!-- FEATURED BLOG: Mainframe System Pyramid (full-width) -->
+        <div class="blog-card blog-featured reveal-item">
+          <div class="blog-featured-inner blog-featured-inner-reversed">
+
+            <!-- Blog content -->
+            <div class="blog-featured-content">
+              <div class="blog-featured-meta">
+                <span class="blog-num">06</span>
+                <div>
+                  <div class="blog-cat">Enterprise Computing / Systems Engineering</div>
+                  <h3 class="blog-title blog-featured-title">Why Mainframes Still Run the World (And Why Everyone Is Ignoring Them)</h3>
+                </div>
+              </div>
+
+              <p class="blog-body">While everyone is talking about AI, the systems running the world are still mainframes.</p>
+
+              <p class="blog-body">The reality is uncomfortable for the tech hype cycle: <strong>banking, global payments, airlines, and government infrastructure don't run on the latest trendy framework.</strong> They run on enterprise mainframes like IBM Z. When processing billions of transactions securely, without a single millisecond of downtime, stability overwhelmingly beats hype.</p>
+
+              <p class="blog-body">AI is undeniably powerful. But AI models don't exist in a vacuum — they require an incredibly resilient, high-bandwidth, and fault-tolerant infrastructure to actually function at scale. <strong>Mainframes are the silent backbone that keeps this global data flowing.</strong></p>
+
+              <p class="blog-body">This exposes a critical insight: <strong>Systems engineering is far more critical than just model building.</strong> Creating an AI prototype is one thing. Ensuring its supporting infrastructure handles extreme scale, guarantees uptime, and provides absolute fault tolerance is a completely different discipline.</p>
+
+              <p class="blog-body">As an AI/ML student, I realized something important: building models is surprisingly easier than deploying and maintaining them at a global scale. This is exactly why enterprise systems matter. You can't scale the future on fragile foundations.</p>
+
+              <p class="blog-quote">"Everyone wants to build AI. Few want to understand what keeps it alive. The future won't just be built by AI engineers — but by engineers who understand the systems that keep AI running."</p>
+
+              <div class="blog-tags">
+                <span>Mainframe</span><span>Systems Engineering</span><span>Scalability</span><span>Enterprise Computing</span><span>AI Infrastructure</span>
+              </div>
+            </div>
+
+            <!-- Chart image: RIGHT placement -->
+            <div class="blog-chart-wrap blog-chart-right">
+              <div class="pyramid-container">
+                <div class="pyramid-level level-1">
+                  <span>AI Applications</span>
+                  <div class="level-desc">UI, Models, Abstractions</div>
+                </div>
+                <div class="pyramid-level level-2">
+                  <span>Cloud / APIs</span>
+                  <div class="level-desc">Microservices, Delivery</div>
+                </div>
+                <div class="pyramid-level level-3">
+                  <span>Mainframe / Core Systems</span>
+                  <div class="level-desc">Transactions, Data, Uptime</div>
+                </div>
+              </div>
+              <div class="blog-chart-caption" style="margin-top:20px;">Stacked System Importance: AI sits at the top, but Enterprise Mainframes provide the critical foundation.</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG #07: In-Transaction AI -->
+    <section class="section reveal-section" style="padding-top:0;min-height:auto">
+      <div class="section-container" style="padding-top:0">
+        <!-- FEATURED BLOG -->
+        <div class="blog-card blog-featured reveal-item">
+          <div class="blog-featured-inner">
+
+            <!-- Chart image: LEFT placement -->
+            <div class="blog-chart-wrap">
+              <div class="latency-diagram">
+                <div class="diagram-title">Cloud AI Pipeline (High Latency)</div>
+                <div class="latency-path cloud-path">
+                  <div class="node">Transaction</div>
+                  <div class="edge">➔</div>
+                  <div class="node node-cloud">Network</div>
+                  <div class="edge">➔</div>
+                  <div class="node node-ai">Cloud ML</div>
+                  <div class="edge">➔</div>
+                  <div class="node">Decision</div>
+                </div>
+                
+                <div class="diagram-title" style="margin-top:10px;">IBM Z Pipeline (Zero Latency)</div>
+                <div class="latency-path z-path">
+                  <div class="node">Transaction</div>
+                  <div class="edge edge-fast">➔</div>
+                  <div class="node node-z">Telum AI (On-Chip)</div>
+                  <div class="edge edge-fast">➔</div>
+                  <div class="node">Decision</div>
+                </div>
+              </div>
+              <div class="blog-chart-caption" style="margin-top:20px;">Eliminating network hops allows IBM Z to score 100% of transactions for fraud in <1ms.</div>
+            </div>
+
+            <!-- Blog content -->
+            <div class="blog-featured-content">
+              <div class="blog-featured-meta">
+                <span class="blog-num">07</span>
+                <div>
+                  <div class="blog-cat">Enterprise Computing / In-Transaction AI</div>
+                  <h3 class="blog-title blog-featured-title">Zero-Latency AI: Why I'm Building on IBM Z</h3>
+                </div>
+              </div>
+
+              <p class="blog-body">The standard AI playbook is broken for high-stakes transactions. Usually, an event occurs, data is sent across a network to a cloud server, the AI model runs inference, and the result is sent back. For an e-commerce recommendation, that 200-millisecond delay is fine.</p>
+
+              <p class="blog-body"><strong>For a credit card swipe, 200 milliseconds is an eternity.</strong></p>
+
+              <p class="blog-body">This is why I'm moving beyond traditional cloud deployments and focusing on <strong>IBM Z and the Telum processor</strong>. Instead of sending data to the AI, IBM Z brings the AI directly to the data.</p>
+
+              <p class="blog-body">By leveraging on-chip AI acceleration, we can achieve <em>in-transaction scoring</em>. This means running complex deep learning models to detect fraud during the actual transaction window — in under 1 millisecond. No network hops. No API latency. Just pure, immediate compute.</p>
+
+              <p class="blog-body">It's a complete paradigm shift. As an engineer, deploying an ONNX model directly into a z/OS pipeline teaches you that the ultimate bottleneck isn't usually the algorithm's complexity — it's the infrastructure's physics.</p>
+
+              <p class="blog-quote">"True scale isn't just about handling billions of requests. It's about handling them so fast that the AI is invisible."</p>
+
+              <div class="blog-tags">
+                <span>IBM Z</span><span>Telum Processor</span><span>In-Transaction AI</span><span>ONNX</span><span>Low Latency</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CURRENTLY WORKING ON + BELIEFS -->
+    <section id="now" class="section reveal-section">
+      <div class="section-container">
+        <div class="now-grid">
+
+          <!-- Currently Working On -->
+          <div class="now-card reveal-item">
+            <div class="section-header" style="margin-bottom:32px">
+              <span class="section-tag">🔧 Right Now</span>
+              <h2 class="section-title" style="font-size:clamp(28px,3vw,44px)">Currently <span
+                  class="gradient-text">Building</span></h2>
+            </div>
+            <ul class="now-list">
+              <li>
+                <span class="now-dot"></span>
+                <div>
+                  <strong>FIRE EV — AI Battery Intelligence System</strong>
+                  <span>Refining the ML pipeline, improving real-time sensor integration, and hardening the predictive
+                    failure model for reliability at scale.</span>
+                </div>
+              </li>
+              <li>
+                <span class="now-dot"></span>
+                <div>
+                  <strong>Scalable AI System Architecture</strong>
+                  <span>Exploring how to take AI models from notebook experiments to production-grade, high-availability
+                    systems that actually handle real-world load.</span>
+                </div>
+              </li>
+              <li>
+                <span class="now-dot"></span>
+                <div>
+                  <strong>IBM Z &amp; In-Transaction AI</strong>
+                  <span>Architecting zero-latency AI scoring models that run directly on mainframe processors (IBM Telum) to eliminate network lag during critical transactions.</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- What I Believe -->
+          <div class="now-card reveal-item">
+            <div class="section-header" style="margin-bottom:32px">
+              <span class="section-tag">💡 My Philosophy</span>
+              <h2 class="section-title" style="font-size:clamp(28px,3vw,44px)">What I <span
+                  class="gradient-text">Believe</span></h2>
+            </div>
+            <div class="belief-list">
+              <div class="belief-item">
+                <span class="belief-num">01</span>
+                <div>
+                  <strong>AI must move beyond prototypes.</strong>
+                  <p>A model that lives in a notebook isn't an AI system — it's a science project. Real impact starts
+                    the moment AI ships into production and handles real users, real data, and real consequences.</p>
+                </div>
+              </div>
+              <div class="belief-item">
+                <span class="belief-num">02</span>
+                <div>
+                  <strong>Systems must be scalable and reliable.</strong>
+                  <p>Accuracy is table stakes. The harder problem is building something that works at 10x load, recovers
+                    from failure, and keeps running when no one is watching. That's engineering.</p>
+                </div>
+              </div>
+              <div class="belief-item">
+                <span class="belief-num">03</span>
+                <div>
+                  <strong>Technology should create real-world impact.</strong>
+                  <p>Every system I build should solve a problem that matters — for a person, a community, or a country.
+                    Technology without purpose is just complexity.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Closing Line -->
+        <div class="closing-line reveal-item">
+          <p>I don't just follow technology trends, <span class="gradient-text">I build systems that make them
+              real.</span></p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EDUCATION & CERTS -->
+    <section id="education" class="section reveal-section">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">🎓 Learning</span>
+          <h2 class="section-title">Education & <span class="gradient-text">Certs</span></h2>
+        </div>
+        <div class="edu-grid">
+          <div class="edu-card reveal-item">
+            <div class="edu-icon">🏛️</div>
+            <div class="edu-content">
+              <h3>B.Tech — Computer Science (AI/ML)</h3>
+              <span class="edu-school">Christ University, Bangalore</span>
+              <span class="edu-date">June 2024 – May 2028</span>
+            </div>
+          </div>
+          <div class="edu-card reveal-item">
+            <div class="edu-icon">📚</div>
+            <div class="edu-content">
+              <h3>Senior Secondary</h3>
+              <span class="edu-school">Kendriya Vidyalaya</span>
+              <span class="edu-date">Apr 2023 – Apr 2024</span>
+            </div>
+          </div>
+          <div class="edu-card reveal-item">
+            <div class="edu-icon">🏫</div>
+            <div class="edu-content">
+              <h3>High School Diploma</h3>
+              <span class="edu-school">Kendriya Vidyalaya</span>
+              <span class="edu-date">Apr 2021 – Apr 2022</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-grid">
+          <div class="cert-card reveal-item"><span class="cert-icon">🔬</span><span>Infosys — Computer Vision 101</span>
+          </div>
+          <div class="cert-card reveal-item"><span class="cert-icon">✨</span><span>Infosys — Generative AI
+              Unleashing</span></div>
+          <div class="cert-card reveal-item"><span class="cert-icon">🎯</span><span>Infosys — Prelude</span></div>
+          <div class="cert-card reveal-item"><span class="cert-icon">☁️</span><span>AWS AI Practitioner Challenge</span>
+          </div>
+          <div class="cert-card reveal-item"><span class="cert-icon">🤖</span><span>Build &amp; Deploy Apps with Google
+              AI Studio</span></div>
+          <div class="cert-card reveal-item"><span class="cert-icon">🗣️</span><span>Multilingual AI Speech App with
+              Vibe Coding</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section reveal-section">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">📬 Let's Talk</span>
+          <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info reveal-item">
+            <p class="contact-lead">I'm always open to exciting AI projects, collaborations, internships, and
+              conversations about the future of tech.</p>
+            <div class="contact-items">
+              <a href="tel:+919492601634" class="contact-item">
+                <span class="contact-icon">📱</span>
+                <div><strong>Phone</strong><span>+91 9492601634</span></div>
+              </a>
+              <a href="mailto:harshdeep21sep2000@gmail.com" class="contact-item">
+                <span class="contact-icon">📧</span>
+                <div><strong>Email</strong><span>harshdeep21sep2000@gmail.com</span></div>
+              </a>
+              <a href="https://www.linkedin.com/in/harshdeep-ai" target="_blank" class="contact-item">
+                <span class="contact-icon">💼</span>
+                <div><strong>LinkedIn</strong><span>linkedin.com/in/harshdeep-ai</span></div>
+              </a>
+              <a href="https://github.com/Harshxox" target="_blank" class="contact-item">
+                <span class="contact-icon">🐙</span>
+                <div><strong>GitHub</strong><span>github.com/Harshxox</span></div>
+              </a>
+              <div class="contact-item no-link">
+                <span class="contact-icon">📍</span>
+                <div><strong>Location</strong><span>Greater Bengaluru Area, India</span></div>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form reveal-item" id="contactForm">
+            <div class="form-group">
+              <input type="text" id="nameInput" placeholder="Your Name" required />
+              <label for="nameInput">Your Name</label>
+            </div>
+            <div class="form-group">
+              <input type="email" id="emailInput" placeholder="Your Email" required />
+              <label for="emailInput">Your Email</label>
+            </div>
+            <div class="form-group">
+              <textarea id="msgInput" placeholder="Your Message" rows="5" required></textarea>
+              <label for="msgInput">Your Message</label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+              <span>Send Message 🚀</span>
+            </button>
+            <div class="form-success" id="formSuccess">✅ Message sent! I'll get back to you soon.</div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">HS<span class="dot">.</span></div>
+      <p>© 2026 Harshdeep Sharma · Built with 💜 &amp; Three.js</p>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/harshdeep-ai" target="_blank">LinkedIn</a>
+        <a href="https://github.com/Harshxox" target="_blank">GitHub</a>
+        <a href="mailto:harshdeep21sep2000@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- THREE.JS CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
